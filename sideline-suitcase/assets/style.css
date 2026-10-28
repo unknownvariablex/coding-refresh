@@ -1,11 +1,11 @@
 :root{
-  --bg:#fffaf7; --surface:#ffffff; --ink:#2b2233; --muted:#6b5f73;
-  --brand:#c2185b; --brand-ink:#ffffff; --accent:#1e6f8f; --soft:#fde7ef; --line:#eedde5;
+  --bg:#ffffff; --surface:#ffffff; --ink:#111111; --muted:#555555;
+  --brand:#c8102e; --brand-ink:#ffffff; --accent:#b00d27; --soft:#fbe9ec; --line:#e5e5e5;
   --radius:14px; --max:760px;
 }
 @media (prefers-color-scheme: dark){
-  :root{ --bg:#1b1620; --surface:#241e2a; --ink:#f3ecf6; --muted:#b9adc2;
-    --brand:#f06292; --brand-ink:#1b1620; --accent:#6cc3e3; --soft:#3a2533; --line:#3b3142; }
+  :root{ --bg:#0d0d0d; --surface:#1a1a1a; --ink:#ffffff; --muted:#bdbdbd;
+    --brand:#e8243f; --brand-ink:#ffffff; --accent:#ff5c6f; --soft:#2a1216; --line:#333333; }
 }
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
@@ -13,12 +13,12 @@ body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 system-ui,-ap
 a{color:var(--accent)}
 img{max-width:100%;height:auto}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 16px}
-header.site{border-bottom:1px solid var(--line);background:var(--surface)}
+header.site{background:#111111;border-bottom:4px solid var(--brand)}
 header.site .wrap{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center;justify-content:space-between;padding-top:14px;padding-bottom:14px}
-.logo{font-weight:800;font-size:1.25rem;color:var(--ink);text-decoration:none;letter-spacing:-.01em}
-.logo span{color:var(--brand)}
-nav a{margin-right:14px;color:var(--muted);text-decoration:none;font-size:.95rem}
-nav a:hover{color:var(--brand)}
+.logo{font-weight:800;font-size:1.25rem;color:#ffffff;text-decoration:none;letter-spacing:-.01em}
+.logo span{color:#ff3b52}
+nav a{margin-right:14px;color:#d6d6d6;text-decoration:none;font-size:.95rem}
+nav a:hover{color:#ffffff;text-decoration:underline}
 .disclosure-bar{background:var(--soft);font-size:.85rem;color:var(--muted);padding:8px 0}
 main{padding:28px 0 48px}
 h1{font-size:clamp(1.8rem,5vw,2.5rem);line-height:1.15;letter-spacing:-.02em;margin:.2em 0 .4em}
